@@ -21,7 +21,7 @@ FOLDER STRUCTURE
 ----------------
 Assignment 2/
 ├── dataset/
-│   ├── me/                 # Huzaifa's face images (positive samples)
+│   ├── me/                 # True face images (positive samples)
 │   └── test/               # Images used by the GUI viewer
 ├── code/
 │   ├── train.py            # Training + evaluation code
@@ -37,7 +37,7 @@ Assignment 2/
 
 SETUP DATASET
 -------------
-1. Place Huzaifa's face images in: `dataset/me/`
+1. Place True face images in: `dataset/me/`
    - Include different angles, lighting, expressions
    - Supported formats: JPG, JPEG, PNG, BMP, GIF, DNG
 
@@ -53,11 +53,11 @@ Run from project root:
     python main.py --train
 
 This will:
-1. Load Huzaifa images from `dataset/me/`
+1. Load True images from `dataset/me/`
 2. Preprocess (grayscale, resize to 720x720, normalize)
 3. Split into 60% train / 20% val / 20% test
 4. Train the shallow neural network for 200 epochs
-5. Save weights to `results/model_params.npz`
+5. Save weights to `results/model_params.npz`. This step is important if you are running the model first time and you have freshly downloaded it from github. The npz file must be there in the results folder. 
 6. Plot training/validation loss to `results/training_loss.png`
 7. Print evaluation summary to console
 
