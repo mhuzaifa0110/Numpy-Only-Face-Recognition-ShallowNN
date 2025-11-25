@@ -1,0 +1,14 @@
+Mean Errors and Accuracy
+==================================================
+
+Training Set:
+  Mean Error: 0.025538
+  Accuracy: 0.512415
+
+Validation Set:
+  Mean Error: 0.025636
+  Accuracy: 0.489796
+
+Test Set:
+  Mean Error: 0.025519
+  Accuracy: 0.496644
